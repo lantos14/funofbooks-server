@@ -1,0 +1,10 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "mongodb": "mongodb+srv://lantos:funofbooks13@cluster0-tbv4w.mongodb.net/test?retryWrites=true"
+}
