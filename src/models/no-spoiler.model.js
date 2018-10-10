@@ -10,6 +10,14 @@ module.exports = function (app) {
       type: String, 
       required: true,
     }, 
+    description: {
+      type: String, 
+      required: true,
+    }, 
+    imgSrc: {
+      type: String, 
+      required: true,
+    }, 
     story: {
       type: String,
       required: true,
