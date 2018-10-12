@@ -6,5 +6,29 @@
     "default": 10,
     "max": 50
   },
-  "mongodb": "mongodb+srv://lantos:funofbooks13@cluster0-tbv4w.mongodb.net/test?retryWrites=true"
+  "mongodb": "mongodb+srv://lantos:funofbooks13@cluster0-tbv4w.mongodb.net/test?retryWrites=true",
+  "authentication": {
+    "secret": "c738c82c8be589c7f6e4c29b068f187b7bb0496666864db212ffa5dc6f4f37cf0e5a34051ffb09ee71accd8b98dba1f51ffcf185c6ebd44b97c9843f7cf128c888dfccaacb6e6fc07c93c42cc8e8b5dc641cdd9d1d8455961e0a141de0913d80fa451fd1bdd26efec3b3b9493e118f8b93078897bc84afd00d626218e78b4a0d82ee96c3f439aa33af932e6fa3d9904ded8f251de49291de7428b454741aff9f1120f2f93403369b62f665019a8df4d84068f14d4e2f0992ee21fc7865fbe60662f205033ff9889036e2eb5774747e17f5fc63388fa408d6b4ac2fcd772fb7f317861b37ba2b34c3eae63aa0644573d46868226ec99c94589c04ad8c07e5c065",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  }
 }
