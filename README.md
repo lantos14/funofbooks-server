@@ -1,57 +1,12 @@
 # funofbooks-server
 
-> funofbooks server
-
 ## About
 
-This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
+This project uses [Feathers](http://feathersjs.com).
 
-## Getting Started
+It provides a full REST API to my [funofbooks-webapp](https://github.com/lantos14/funofbooks-webapp), with a live connection to a [MongoDB](https://www.mongodb.com/) database.
 
-Getting up and running is as easy as 1, 2, 3.
+Also I added authentication, and deployed it to [Google Cloud Service](https://cloud.google.com/appengine/) App Engine.
 
-1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
-2. Install your dependencies
+Feel free to browse. :)
 
-    ```
-    cd path/to/funofbooks-server; npm install
-    ```
-
-3. Start your app
-
-    ```
-    npm start
-    ```
-
-## Testing
-
-Simply run `npm test` and all your tests in the `test/` directory will be run.
-
-## Scaffolding
-
-Feathers has a powerful command line interface. Here are a few things it can do:
-
-```
-$ npm install -g @feathersjs/cli          # Install Feathers CLI
-
-$ feathers generate service               # Generate a new Service
-$ feathers generate hook                  # Generate a new Hook
-$ feathers generate model                 # Generate a new Model
-$ feathers help                           # Show all commands
-```
-
-## Help
-
-For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
-
-## Changelog
-
-__0.1.0__
-
-- Initial release
-
-## License
-
-Copyright (c) 2018
-
-Licensed under the [MIT license](LICENSE).
