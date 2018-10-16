@@ -30,6 +30,10 @@ module.exports = function (app) {
       type: String,
       required: true,
     },
+    isFun: {
+      type: Boolean,
+      required: true,
+    },
   }, {
     timestamps: true
   });
