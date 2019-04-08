@@ -21,8 +21,8 @@ module.exports = function (app) {
 
 
   }, {
-      timestamps: true
-    });
+    timestamps: true
+  });
 
   return mongooseClient.model('users', users);
 };
