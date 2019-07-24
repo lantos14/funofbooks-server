@@ -13,6 +13,13 @@ module.exports = function (app) {
     email: {
       type: String,
       required: true,
+      unique: true,
+    },
+    role: {
+      type: String,
+      enum: ['reader'],
+      default: 'reader',
+      required: true,
     },
     password: { 
       type: String,
